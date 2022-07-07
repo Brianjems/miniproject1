@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Noto+Sans&family=Roboto:ital,wght@0,300;1,500&display=swap"
+    rel="stylesheet" />
+  <link href="styles/html.css" rel="stylesheet">
+</head>
+<style>
+  
+</style>
+
+<body>
+  <!---Navbar-->
+  <header class="p-3 bg-dark text-white sticky-top">
+    <div class="container" height="300px">
+      <div class="d-flex flex-wrap align-items-center justify-content justify-content-lg-start">
+        <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0">
+          <img src="pictures/headerlogo.png" width="93px" height="50" />
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2">
+          <li>
+            <a href="index.html" class="nav-link px-2 text-white">HOME</a>
+          </li>
+          <li>
+            <button type="button" class="btn btn-close-white border-0 mt-0 dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              REFERENCES
+            </button>
+            <ul class="dropdown-menu bg-dark">
+              <li>
+                <a class="dropdown-item text-white" href="html.html">HTML</a>
+              </li>
+              <li><a class="dropdown-item text-white" href="#">CSS</a></li>
+              <li>
+                <a class="dropdown-item text-white" href="#">BOOTSTRAP(Coming Soon)</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-white" href="#">JAVASCRIPT(Coming Soon)</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item text-white" href="#">OTHERS(Coming Soon)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="courses.html" class="nav-link px-2 text-white">COURSES</a>
+          </li>
+          <li>
+            <a href="Aboutus.html" class="nav-link px-2 text-white">ABOUT US!</a>
+          </li>
+        </ul>
+        <div class="text-end">
+          <a href="login.html">
+            <button type="button" class="btn btn-outline-light me-2">
+              Login
+            </button>
+          </a>
+          <button type="button" class="btn btn-outline-light me-2">
+            Sign-Up
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-reference text-center">
+    <span class="align-middle">HTML REFERENCE</span>
+  </div>
+
+  <div id="mySidebar" class="sidebar position-absolute bg-dark">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="html.html">HTML Elements</a>
+    <a href="examplecode.html">Example Codes</a>
+    <a href="#">Bootstrap</a>
+    <a href="#">Javascript</a>
+  </div>
+
+  <div id="main">
+    <button class="openbtn bg-dark" onclick="openNav()">☰ Reference</button>
+  </div>
+  <br />
+
+  <!--Table 1-->
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">MAIN ROOT</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;html&gt;</a>
+          </td>
+          <td>
+            The HTML element represents the root (top-level element) of an
+            HTML document, <br />
+            so it is also referred to as the root element. All other elements
+            must be descendants of this element.
+          </td>
+        </tr>
+        <tr></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--Table 2-->
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">DOCUMENT META DATA</h2>
+        <p>
+          Metadata contains information about the page. This includes
+          information about styles, scripts and data to help software
+          <br />(search engines, browsers, etc.) use and render the page.
+          Metadata for styles and scripts may be defined in the page <br />or
+          link to another file that has the information.
+        </p>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;base&gt;</a>
+          </td>
+          <td>
+            The &lt;base&gt;HTML element specifies the base URL to use for all
+            relative URLs in a document. <br />There can be only one
+            &lt;base&gt; element in a document.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <a href="#" class="text-white">&lt;head&gt;</a>
+          </td>
+          <td>
+            The &lt;head&gt; HTML element contains machine-readable
+            information (metadata) about the document, <br />like its title,
+            scripts, and style sheets.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>
+            <a href="#" class="text-white">&lt;link&gt;</a>
+          </td>
+          <td>
+            The &lt;link&gt; element specifies relationships between the current document and an external resource.
+            <br>This element is most commonly used to link to CSS,
+            <br>but is also used to establish site icons (both "favicon" style icons and icons
+            <br>for the home screen and apps on mobile devices) among other things.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>
+            <a href="#" class="text-white">&lt;meta&gt;</a>
+          </td>
+          <td>The &lt;meta&gt; element represents Metadata that cannot be represented by other HTML meta-related
+            elements,
+            <br>like base, link, script, style or title.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>
+            <a href="#" class="text-white">&lt;title&gt;</a>
+          </td>
+          <td>The &lt;title&gt; HTML element defines the document's title that is shown in a Browser's title bar or a
+            page's tab.
+            <br>It only contains text; tags within the element are ignored.
+          </td>
+        </tr>
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--Table 3-->
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">A</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;a&gt;</a>
+          </td>
+          <td>
+            The Anchor Element (or anchor element), with its href attribute, creates a hyperlink to web pages, files,
+            email addresses,
+            <br>locations in the same page, or anything else a URL can address.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <a href="#" class="text-white">&lt;abbr&gt;</a>
+          </td>
+          <td> HTML element represents an abbreviation or acronym; the optional title attribute can provide an expansion
+            or description for
+            <br>the abbreviation. If present, title must contain this full description and nothing else.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>
+            <a href="#" class="text-white">&lt;address&gt;</a>
+          </td>
+          <td>HTML element indicates that the enclosed HTML provides contact information for a person or people, or for
+            an organization.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>
+            <a href="#" class="text-white">&lt;area&gt;</a>
+          </td>
+          <td>HTML element defines an area inside an image map that has predefined clickable areas. An image map allows
+            geometric areas on an image to be associated with hypertext link.
+            <br>
+          </td>
+        </tr>
+        <tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>
+            <a href="#" class="text-white">&lt;article&gt;</a>
+          </td>
+          <td> HTML element represents a self-contained composition in a document, page, application, or site, which is
+            intended to be independently distributable or reusable
+            <br>(e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog
+            entry, a product card,
+            <br> a user-submitted comment, an interactive widget or gadget, or any other independent item of content.
+          </td>
+        </tr>
+        <tr>
+
+        <tr>
+          <th scope="row">6</th>
+          <td>
+            <a href="#" class="text-white">&lt;aside&gt;</a>
+          </td>
+          <td>HTML element represents a portion of a document whose content is only indirectly related to the document's
+            main content. Asides are frequently presented as sidebars or call-out boxes.
+          </td>
+        </tr>
+        <tr>
+
+        <tr>
+          <th scope="row">7</th>
+          <td>
+            <a href="#" class="text-white">&lt;audio&gt;</a>
+          </td>
+          <td>HTML element is used to embed sound content in documents. It may contain one or more audio sources,
+            represented using the src attribute or the &lt;source&gt; element:
+            <br>the browser will choose the most suitable one. It can also be the destination for streamed media, using
+            a MediaStream.
+          </td>
+        </tr>
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--Table 4-->
+
+
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">B</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;b&gt;</a>
+          </td>
+          <td>
+            HTML element is used to draw the reader's attention to the element's contents, which are not otherwise
+            granted special importance.
+            This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However,
+            you should not use &lt;b&gt; for styling text; instead,
+            you should use the CSS font-weight property to create boldface text, or the &lt;strong&gt; element to
+            indicate that text is of special importance.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <a href="#" class="text-white">&lt;base&gt;</a>
+          </td>
+          <td>HTML element specifies the base URL to use for all relative URLs in a document. There can be only one
+            &lt;base&gt; element in a document.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>
+            <a href="#" class="text-white">&lt;body&gt;</a>
+          </td>
+          <td>HTML element represents the content of an HTML document. There can be only one &lt;body&gt; element in a
+            document.
+          </td>
+        </tr>
+        <th scope="row">4</th>
+        <td>
+          <a href="#" class="text-white">&lt;br&gt;</a>
+        </td>
+        <td>HTML element produces a line break in text (carriage-return). It is useful for writing a poem or an address,
+          where the division of lines is significant.
+          <br>
+        </td>
+        </tr>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>
+            <a href="#" class="text-white">&lt;button&gt;</a>
+          </td>
+          <td>HTML element is an interactive element activated by a user with a mouse, keyboard, finger, voice command,
+            or other assistive technology. Once activated,
+            it then performs a programmable action, such as submitting a form or opening a dialog.
+          </td>
+        </tr>
+        <tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--Table 5-->
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">C</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;canvas&gt;</a>
+          </td>
+          <td>
+            Use the HTML &lt;canvas&gt; element with either the canvas scripting API or the WebGL API to draw graphics
+            and animations.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <a href="#" class="text-white">&lt;caption&gt;</a>
+          </td>
+          <td>The &lt;caption&gt; HTML element specifies the caption (or title) of a table.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>
+            <a href="#" class="text-white">&lt;cite&gt;</a>
+          </td>
+          <td> HTML element is used to describe a reference to a cited creative work, and must include the title of that
+            work.
+            The reference may be in an abbreviated form according to context-appropriate conventions related to citation
+            metadata.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>
+            <a href="#" class="text-white">&lt;code&gt;</a>
+          </td>
+          <td>HTML element displays its contents styled in a fashion intended to indicate that the text is a short
+            fragment of computer code. By default, the content text is displayed using the user agent's default
+            monospace font.
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>
+            <a href="#" class="text-white">&lt;col&gt;</a>
+          </td>
+          <td>The &lt;col&gt; HTML element defines a column within a table and is used for defining common semantics on
+            all common cells. It is generally found within a &lt;col&gt;group element.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>
+            <a href="#" class="text-white">&lt;colgroup&gt;</a>
+          </td>
+          <td>The &lt;colgroup&gt; HTML element defines a group of columns within a table.
+          </td>
+        </tr>
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!--Table 6-->
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">D</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;data&gt;</a>
+          </td>
+          <td>
+            The &lt;data&gt; HTML element links a given piece of content with a machine-readable translation. If the
+            content is time- or date-related, the &gt;time&gt; element must be used.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <a href="#" class="text-white">&lt;datalist&gt;</a>
+          </td>
+          <td>The &lt;datalist&lt; HTML element contains a set of &lt;option&lt; elements that represent the permissible
+            or recommended options available to choose from within other controls.
+          </td>
+        </tr>
+        <tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>
+            <a href="#" class="text-white">&lt;dd&gt;</a>
+          </td>
+          <td>The &lt;dd&gt; HTML element provides the description, definition, or value for the preceding term
+            (&gt;dt&gt;) in a description list (&gt;dl&gt;).
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>
+            <a href="#" class="text-white">&lt;div&gt;</a>
+          </td>
+          <td>The &lt;div&gt; HTML element is the generic container for flow content. It has no effect on the content or
+            layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout
+            model like Flexbox is applied to its parent element).
+          </td>
+        </tr>
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!--Table 7-->
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">E</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;e&gt;</a>
+          </td>
+          <td>
+            The &lt;em&gt; HTML element marks text that has stress emphasis. The &lt;em&gt; element can be nested, with
+            each level of nesting indicating a greater degree of emphasis.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <a href="#" class="text-white">&lt;embed&gt;</a>
+          </td>
+          <td> The &lt;em&gt; HTML element marks text that has stress emphasis. The <em> element can be nested, with
+              each level of nesting indicating a greater degree of emphasis.
+          </td>
+        </tr>
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--Table 8-->
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">F</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;footer&gt;</a>
+          </td>
+          <td>
+            The &lt;footer&gt; HTML element represents a footer for its nearest ancestor sectioning content or
+            sectioning root element. A &lt;footer&gt; typically contains information about the author of the section,
+            copyright data or links to related documents.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <a href="#" class="text-white">&lt;form&gt;</a>
+          </td>
+          <td>
+            The &lt;form&gt; HTML element represents a document section containing interactive controls for submitting
+            information.
+          </td>
+        </tr>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+
+  <!--Table 9-->
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">H</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;head&gt;</a>
+          </td>
+          <td>
+            The &lt;head&gt; HTML element contains machine-readable information (metadata) about the document, like its
+            title, scripts, and style sheets.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <a href="#" class="text-white">&lt;header&gt;</a>
+          </td>
+          <td>
+            The &lt;form&gt; HTML element represents a document section containing interactive controls for submitting
+            information.
+          </td>
+        </tr>
+        </tr>
+        <th scope="row">3</th>
+        <td>
+          <a href="#" class="text-white">&lt;hr&gt;</a>
+        </td>
+        <td>
+          The &lt;hr&gt; HTML element represents a thematic break between paragraph-level elements: for example, a
+          change of scene in a story, or a shift of topic within a section.
+        </td>
+        </tr>
+        <tr>
+
+      </tbody>
+    </table>
+  </div>
+
+
+  <!--Table 10-->
+
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">I</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;img&gt;</a>
+          </td>
+          <td>
+            The &lt;img&gt; HTML element embeds an image into the document.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <a href="#" class="text-white">&lt;input&gt;</a>
+          </td>
+          <td>
+            The &lt;input&gt; HTML element is used to create interactive controls for web-based forms in order to accept
+            data from the user; a wide variety of types of input data and control widgets are available, depending on
+            the device and user agent. The &lt;input&gt; element is one of the most powerful and complex in all of HTML
+            due to the sheer number of combinations of input types and attributes.
+          </td>
+        </tr>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!--Table 11-->
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">L</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;label&gt;</a>
+          </td>
+          <td>
+            The &lt;label&gt; HTML element represents a caption for an item in a user interface.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <a href="#" class="text-white">&lt;li&gt;</a>
+          </td>
+          <td>
+            The &lt;label&gt; HTML element represents a caption for an item in a user interface.
+          </td>
+        </tr>
+        <th scope="row">3</th>
+        <td>
+          <a href="#" class="text-white">&lt;link&gt;</a>
+        </td>
+        <td>
+          The &lt;link&gt; HTML element specifies relationships between the current document and an external resource.
+          This element is most commonly used to link to stylesheets, but is also used to establish site icons (both
+          "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.
+        </td>
+        </tr>
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--Table 12-->
+
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">N</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;nav&gt;</a>
+          </td>
+          <td>
+            The &lt;nav&gt; HTML element represents a section of a page whose purpose is to provide navigation links,
+            either within the current document or to other documents. Common examples of navigation sections are menus,
+            tables of contents, and indexes.
+          </td>
+        </tr>
+        <tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <div class="container">
+    <table class="table table-dark table-striped">
+      <thead>
+        <h2 class="mb-0 mt-4">S</h2>
+        <br />
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <a href="#" class="text-white">&lt;section&gt;</a>
+          </td>
+          <td>
+            The &lt;section&gt; HTML element represents a generic standalone section of a document, which doesn't have a
+            more specific semantic element to represent it. Sections should always have a heading, with very few
+            exceptions.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <a href="#" class="text-white">&lt;span&gt;</a>
+          </td>
+          <td>
+            The &lt;span&gt; HTML element is a generic inline container for phrasing content, which does not inherently
+            represent anything.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>
+            <a href="#" class="text-white">&lt;strong&gt;</a>
+          </td>
+          <td>
+            The &lt;strong&gt; HTML element indicates that its contents have strong importance, seriousness, or urgency.
+            Browsers typically render the contents in bold type
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>
+            <a href="#" class="text-white">&lt;style&gt;</a>
+          </td>
+          <td>
+            The &lt;style&gt; HTML element contains style information for a document, or part of a document. It contains
+            CSS, which is applied to the contents of the document containing the &lt;style&gt; element.
+          </td>
+        </tr>
+        <tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  
+
+
+<br>
+<br>
+
+  <!--Footer-->
+
+  <div class="container-fluid bg-dark text-white">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0  text-white">References</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0  text-white ">Courses</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white ">About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- footer section 2 -->
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Reference</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">HTML</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white ">CSS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">BOOTSTRAP</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">PYTHON</a>
+            </li>
+        </div>
+
+        <!-- footer section 3 -->
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Team</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Brian</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Sanji</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Zoro</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-white">Robin</a>
+            </li>
+        </div>
+
+        <!-- footer2 -->
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter" class="visually-hidden">Email Address</label>
+              <input id="newsletter" type="text" class="form-control" placeholder="Email Address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>@2022 WEBDEVPH, Inc All rights reserved.</p>
+          <img src="pictures/headerlogo.png" width="93px" height="50" />
+        </div>
+    </footer>
+  </div>
+  </main>
+</body>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>

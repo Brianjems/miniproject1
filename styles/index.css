@@ -1,0 +1,36 @@
+body {
+    background: #e8cbc0;
+    background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+    background: linear-gradient(to right, #e8cbc0, #636fa4);
+    min-height: 100vh;
+}
+
+  .carousel-inner {
+    height: 450px;
+    margin-bottom: 0;
+    position: relative
+  }
+  .instructor {
+    font-size: 35px;
+  }
+  .instructor-description {
+    justify-content: center;
+    font-size: 18px;
+    
+
+  }
+  .card{
+    border: none;
+    background-color: rgba(245, 245, 245, 0.4);
+    border-radius:20px;
+    min-height:400px;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+    
+}
+.nav-scroller-1 {
+  background-color: rgb(226, 125, 43);
+  
+}
+.lead {
+  color:#181514
+}

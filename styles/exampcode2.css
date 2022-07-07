@@ -1,0 +1,76 @@
+body {
+    background: #e8cbc0;
+    background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+    background: linear-gradient(to right, #e8cbc0, #636fa4);
+    min-height: 100vh;
+}
+
+
+.container-reference {
+    text-align: center;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 125, 43);
+  }
+  .nav-scroller {
+    background-color: rgb(52, 53, 54);
+  }
+
+.container-reference {
+background-color: rgb(196, 110, 39);
+height: 70px;
+font-size: 40px;
+}
+
+.sidebar {
+height: 100%;
+width: 0;
+z-index: 1;
+top: 150px;
+left: 0;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+height: 230rem;
+
+}
+
+.sidebar a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 20px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.sidebar a:hover {
+color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+.openbtn {
+font-size: 20px;
+cursor: pointer;
+
+color: white;
+padding: 10px 15px;
+border: none;
+}
+
+.openbtn:hover {
+background-color: #444;
+}
+
+#main {
+transition: margin-left .5s;
+padding: 16px;
+}

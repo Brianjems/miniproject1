@@ -1,0 +1,22 @@
+body {
+    background: #e8cbc0;
+    background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+    background: linear-gradient(to right, #e8cbc0, #636fa4);
+    min-height: 100vh;
+}
+.course-caption {
+  font-family: sans-serif;
+  
+}
+.properties.properties2 {
+  box-sizing: border-box;
+}
+.section-title {
+  color: #a37449;
+  font-size: 38px;
+  font-family: 'Titan One';
+
+}
+.properties__card {
+  margin-bottom: 20px;
+}
